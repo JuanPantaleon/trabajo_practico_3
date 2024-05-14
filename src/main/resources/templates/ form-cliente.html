@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Cliente</title>
+    <link rel="stylesheet" href="../static/css/estilos.css">
+</head>
+<body>
+    <header id="encabezado">
+        <h1>Formulario de Registro de Cliente</h1>
+    </header>
+
+    <main class="contenido-principal">
+        <form action="/submit" method="post">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required><br><br>
+
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+            <label>Género:</label><br>
+            <input type="radio" id="genero_femenino" name="genero" value="femenino">
+            <label for="genero_femenino">Femenino</label><br>
+            <input type="radio" id="genero_masculino" name="genero" value="masculino">
+            <label for="genero_masculino">Masculino</label><br>
+            <input type="radio" id="genero_otro" name="genero" value="x">
+            <label for="genero_otro">X</label><br><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required><br><br>
+
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia" required>
+				<option value="jujuy">Jujuy</option>
+				<option value="salta">Salta</option>
+                <option value="buenos_aires">Buenos Aires</option>
+                <option value="cordoba">Córdoba</option>
+                
+				
+            </select><br><br>
+
+            <label for="telefono">Número de Teléfono Celular:</label>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+
+            <label>Categorías de Interés:</label><br>
+            <input type="checkbox" id="Carreras" name="carrerasdeunju" value="carreras">
+            <label for="categoria1">Carreras</label><br>
+            <input type="checkbox" id="Materias" name="materiasdecarreras" value="materias">
+            <label for="categoria2">Materias</label><br>
+            
+
+            <label for="sugerencias">Sugerencias para la Empresa:</label><br>
+            <textarea id="sugerencias" name="sugerencias" rows="4" cols="50"></textarea><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones" required>
+            <label for="terminos_condiciones">Acepto los Términos y Condiciones</label><br><br>
+
+            <input type="checkbox" id="recibir_informacion" name="recibir_informacion">
+            <label for="recibir_informacion">Acepto recibir información relativa a la empresa</label><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer id="pie">
+        <nav>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.x.com/">Twitter</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </nav>
+    </footer>
+</body>
+</html>
